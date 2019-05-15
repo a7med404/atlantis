@@ -20,10 +20,19 @@ Route::get('/blog', function () {
     return view('site/post');
 });
 
-Route::get('/', function () {
-    return view('site/home');
-});
+// Route::get('/', function () {
+//     return view('site/home');
+// });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('/blogs', 'BlogController');
+    Route::resource('/posts', 'PostController');
+    Route::resource('/users', 'BlogController');
+});
+
+Route::get('/blog', 'BlogController@index')->name('blog');
+
+Route::get('/post/{title}/{id}', 'PostController@show')->name('post');

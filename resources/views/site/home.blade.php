@@ -614,9 +614,9 @@
       </div>  <!-- end fullwidth gray background -->
   </div>
 
-  <!--  Blog Section
+  {{-- <!--  Blog Section
   ================================================== -->
-  {{-- <div id="tf-blog">
+  <div id="tf-blog">
       <div class="container"> <!-- container -->
           <div class="section-header">
               <h2>Latest from the <span class="highlight"><strong>Blog</strong></span></h2>
@@ -822,7 +822,6 @@
   <!-- Contact Section
   ================================================== -->
   <div id="tf-contact">
-
       <div class="container"> <!-- container -->
           <div class="section-header">
               <h2>Feel Free to <span class="highlight"><strong>REQUEST CUSTOM QUOTE</strong></span></h2>

@@ -1,7 +1,7 @@
       <!-- Bootstrap -->
       <link href="{{ asset('modules/master/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-      <link href="{{ asset('modules/master/css/AdminLTE.min.css') }}" rel="stylesheet">
-      <link href="{{ asset('modules/master/css/AdminLTE-RTL.css') }}" rel="stylesheet">
+      <link href="{{ asset('modules/master/css/AdminLTE-.min.css') }}" rel="stylesheet">
+      {{-- <link href="{{ asset('modules/master/css/AdminLTE-RTL.css') }}" rel="stylesheet"> --}}
       <link href="{{ asset('modules/master/css/fontawesome.min.css') }}" rel="stylesheet">
       
       <link href="{{ asset('modules/master/css/fontawesome.min.css') }}" rel="stylesheet">

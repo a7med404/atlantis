@@ -1,144 +1,253 @@
 
-<div class="col-md-3 left_col">
-  <div class="left_col scroll-view">
-    <div class="navbar nav_title" style="border: 0;">
-      <a href="index.html" class="site_title"><i class="fa fa-anchor"></i> <span>Men Albayt!</span></a>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <!-- menu profile quick info -->
-    <div class="profile clearfix">
-      <div class="profile_pic">
-        <img src="{{ asset('modules/master/images/user.png') }}" alt="..." class="img-circle profile_img">
-      </div>
-      <div class="profile_info">
-        <span>Welcome</span>
-        <h2>a7med404</h2>
-      </div>
-    </div>
-    <!-- /menu profile quick info -->
-
-    <br />
-
-    <!-- sidebar menu -->
-    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-      <div class="menu_section">
-        <h3>General</h3>
-        <ul class="nav side-menu">
-          <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="index.html">Dashboard</a></li>
-              <li><a href="index2.html">Dashboard2</a></li>
-              <li><a href="index3.html">Dashboard3</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="form.html">General Form</a></li>
-              <li><a href="form_advanced.html">Advanced Components</a></li>
-              <li><a href="form_validation.html">Form Validation</a></li>
-              <li><a href="form_wizards.html">Form Wizard</a></li>
-              <li><a href="form_upload.html">Form Upload</a></li>
-              <li><a href="form_buttons.html">Form Buttons</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="general_elements.html">General Elements</a></li>
-              <li><a href="media_gallery.html">Media Gallery</a></li>
-              <li><a href="typography.html">Typography</a></li>
-              <li><a href="icons.html">Icons</a></li>
-              <li><a href="glyphicons.html">Glyphicons</a></li>
-              <li><a href="widgets.html">Widgets</a></li>
-              <li><a href="invoice.html">Invoice</a></li>
-              <li><a href="inbox.html">Inbox</a></li>
-              <li><a href="calendar.html">Calendar</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="tables.html">Tables</a></li>
-              <li><a href="tables_dynamic.html">Table Dynamic</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="chartjs.html">Chart JS</a></li>
-              <li><a href="chartjs2.html">Chart JS2</a></li>
-              <li><a href="morisjs.html">Moris JS</a></li>
-              <li><a href="echarts.html">ECharts</a></li>
-              <li><a href="other_charts.html">Other Charts</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-              <li><a href="fixed_footer.html">Fixed Footer</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="menu_section">
-        <h3>Live On</h3>
-        <ul class="nav side-menu">
-          <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="e_commerce.html">E-commerce</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="project_detail.html">Project Detail</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-              <li><a href="profile.html">Profile</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-              <li><a href="page_403.html">403 Error</a></li>
-              <li><a href="page_404.html">404 Error</a></li>
-              <li><a href="page_500.html">500 Error</a></li>
-              <li><a href="plain_page.html">Plain Page</a></li>
-              <li><a href="login.html">Login Page</a></li>
-              <li><a href="pricing_tables.html">Pricing Tables</a></li>
-            </ul>
-          </li>
-          <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><a href="#level1_1">Level One</a>
-                <li><a>Level One<span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li class="sub_menu"><a href="level2.html">Level Two</a>
-                    </li>
-                    <li><a href="#level2_1">Level Two</a>
-                    </li>
-                    <li><a href="#level2_2">Level Two</a>
-                    </li>
-                  </ul>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                <img src="modules/master/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                <p>Alexander Pierce</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                </div>
+            </div>
+            <!-- search form -->
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="active treeview">
+                <a href="pages/calendar.html">
+                    <i class="fa fa-dashboard text-yellow"></i> <span>Dashbord</span>
+                </a>
                 </li>
-                <li><a href="#level1_2">Level One</a>
+
+                <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-book text-aqua"></i> <span>Posts</span>
+                    <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                <li><a href="{{ route('posts.index') }}"><i class="fa fa-circle-o text-red"></i> Posts</a></li>
+                    <li class="active"><a href="{{ route('posts.create') }}"><i class="fa fa-circle-o text-aqua"></i>Add Post</a></li>
+                </ul>
                 </li>
+                <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+                <li class="header">LABELS</li>
+                <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
             </ul>
-          </li>
-        </ul>
-      </div>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+            
 
-    </div>
-    <!-- /sidebar menu -->
 
-    <!-- /menu footer buttons -->
-    <div class="sidebar-footer hidden-small">
-      <a data-toggle="tooltip" data-placement="top" title="Settings">
-        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-      </a>
-      <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-      </a>
-      <a data-toggle="tooltip" data-placement="top" title="Lock">
-        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-      </a>
-      <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-      </a>
-    </div>
-    <!-- /menu footer buttons -->
-  </div>
-</div>
+
+        
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Create the tabs -->
+            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class="control-sidebar-menu">
+                <li>
+                    <a href="javascript:void(0)">
+                    <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+        
+                    <div class="menu-info">
+                        <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+        
+                        <p>Will be 23 on April 24th</p>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <i class="menu-icon fa fa-user bg-yellow"></i>
+        
+                    <div class="menu-info">
+                        <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+        
+                        <p>New phone +1(800)555-1234</p>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+        
+                    <div class="menu-info">
+                        <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+        
+                        <p>nora@example.com</p>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <i class="menu-icon fa fa-file-code-o bg-green"></i>
+        
+                    <div class="menu-info">
+                        <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+        
+                        <p>Execution time 5 seconds</p>
+                    </div>
+                    </a>
+                </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+        
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class="control-sidebar-menu">
+                <li>
+                    <a href="javascript:void(0)">
+                    <h4 class="control-sidebar-subheading">
+                        Custom Template Design
+                        <span class="label label-danger pull-right">70%</span>
+                    </h4>
+        
+                    <div class="progress progress-xxs">
+                        <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <h4 class="control-sidebar-subheading">
+                        Update Resume
+                        <span class="label label-success pull-right">95%</span>
+                    </h4>
+        
+                    <div class="progress progress-xxs">
+                        <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <h4 class="control-sidebar-subheading">
+                        Laravel Integration
+                        <span class="label label-warning pull-right">50%</span>
+                    </h4>
+        
+                    <div class="progress progress-xxs">
+                        <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                    <h4 class="control-sidebar-subheading">
+                        Back End Framework
+                        <span class="label label-primary pull-right">68%</span>
+                    </h4>
+        
+                    <div class="progress progress-xxs">
+                        <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                    </div>
+                    </a>
+                </li>
+                </ul>
+                <!-- /.control-sidebar-menu -->
+        
+            </div>
+            <!-- /.tab-pane -->
+        
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                <h3 class="control-sidebar-heading">General Settings</h3>
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Report panel usage
+                    <input type="checkbox" class="pull-right" checked>
+                    </label>
+        
+                    <p>
+                    Some information about this general settings option
+                    </p>
+                </div>
+                <!-- /.form-group -->
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Allow mail redirect
+                    <input type="checkbox" class="pull-right" checked>
+                    </label>
+        
+                    <p>
+                    Other sets of options are available
+                    </p>
+                </div>
+                <!-- /.form-group -->
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Expose author name in posts
+                    <input type="checkbox" class="pull-right" checked>
+                    </label>
+        
+                    <p>
+                    Allow the user to show his name in blog posts
+                    </p>
+                </div>
+                <!-- /.form-group -->
+        
+                <h3 class="control-sidebar-heading">Chat Settings</h3>
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Show me as online
+                    <input type="checkbox" class="pull-right" checked>
+                    </label>
+                </div>
+                <!-- /.form-group -->
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Turn off notifications
+                    <input type="checkbox" class="pull-right">
+                    </label>
+                </div>
+                <!-- /.form-group -->
+        
+                <div class="form-group">
+                    <label class="control-sidebar-subheading">
+                    Delete chat history
+                    <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                    </label>
+                </div>
+                <!-- /.form-group -->
+                </form>
+            </div>
+            <!-- /.tab-pane -->
+            </div>
+        </aside>
+        <!-- /.control-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+                immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+        

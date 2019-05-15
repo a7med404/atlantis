@@ -1,46 +1,56 @@
-<!-- page content -->
-<div class="right_col" role="main">
-  <div class="">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
+@extends('layouts.master')
+@section('title')
+  page title
+@endsection
+@section('header')
+  
+@endsection
+@section('content')
 
-        <div class="row">
-          <div class="col-lg-12 float-right">
-            <ol class="breadcrumb">
-              <li><i class="fa fa-home"></i><a href="\">HOME</a></li>
-              <li><i class="fa fa-laptop"></i>DASHBOARD</li>
-            </ol>
-          </div>
-          <!-- /.col-lg-12 -->
-        </div>
-        <!-- /.row -->
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+        Blank page
+        <small>it all starts here</small>
+        </h1>
+        <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Examples</a></li>
+        <li class="active">Blank page</li>
+        </ol>
+    </section>
 
-        <div class="x_panel">
-          <div class="x_title">
-            <h2> DASHBOARD </h2>
-            <ul class="nav navbar-right panel_toolbox">
-              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Settings 1</a>
-                  </li>
-                  <li><a href="#">Settings 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="close-link"><i class="fa fa-close"></i></a>
-              </li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>
-          <div class="x_content">
-              Add content to the page ...
-          </div>
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Title</h3>
+
+            <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+                <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                <i class="fa fa-times"></i></button>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /page content -->
+        <div class="box-body">
+            Start creating your amazing application!
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            Footer
+        </div>
+        <!-- /.box-footer-->
+        </div>
+        <!-- /.box -->
+
+    </section>
+    <!-- /.content -->
+@endsection
+  
+@section('footer')
+
+@endsection

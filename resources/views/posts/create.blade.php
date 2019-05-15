@@ -10,7 +10,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-        Blank page
+        Create
         <small>it all starts here</small>
         </h1>
         <ol class="breadcrumb">
@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="box-body">
-            Start creating your amazing application!
+                
+            {!! Form::open(['route' => ['posts.store'], 'method' => "POST", 'class' => 'form', 'files' => true]) !!}
+            @include('posts.form')
+            {!! Form::close() !!}
+
         </div>
         <!-- /.box-body -->
-        <div class="box-footer">
-            Footer
-        </div>
-        <!-- /.box-footer-->
         </div>
         <!-- /.box -->
 

@@ -21,7 +21,7 @@
               <li><a href="#tf-about" class="scroll">About</a></li>
               <li><a href="#tf-works" class="scroll">Works</a></li>
               <li><a href="#tf-process" class="scroll">Process</a></li>
-              {{-- <li><a href="#tf-blog" class="scroll">Blog</a></li> --}}
+              <li><a href="{{ route('blog') }}" class="scroll">Blog</a></li>
               <li><a href="#tf-contact" class="scroll">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->

@@ -7,24 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="icon" href="layout/images/visa.png" type="image/ico" />
-
-    <title>Men Albayt!| </title>
+    <title>Atlantis!| </title>
     @include('partials.styles')
 
   </head>
-  <body class="nav-md">
-    <div class="container body" id="app">
-      <div class="main_container">
-        <sidebar></sidebar>
-        {{-- <navigation></navigation> --}}
-        {{-- @include('partials.sidebar-menu')
-        @include('partials.navigation') --}}
-        {{-- @include('partials.page-content') --}}
-        {{-- <footer></footer> --}}
-          {{-- @yield('partials.page-content') --}}
-        {{-- @include('partials.footer') --}}
-      </div>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper" id="app">
+        @include('partials.header')
+        @include('partials.sidebar-menu')
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            @yield('content')
+        </div>
+        <!-- /.content-wrapper -->
     </div>
+    <!-- ./wrapper -->
     @include('partials.scripts')
+    @include('partials.footer')
   </body>
 </html>

@@ -2,7 +2,7 @@
     ================================================== -->
     <div id="tf-footer">
       <div class="container"><!-- container -->
-          <p class="pull-left">© 2015 ethanol. All rights reserved. Theme by Rudhi Sasmito.</p> <!-- copyright text here-->
+          <p class="pull-left">© 2019 Atlantis. All rights reserved. Atlantis.</p> <!-- copyright text here-->
           <ul class="list-inline social pull-right">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li> <!-- Change # With your FB Link -->
               <li><a href="#"><i class="fa fa-twitter"></i></a></li> <!-- Change # With your Twitter Link -->

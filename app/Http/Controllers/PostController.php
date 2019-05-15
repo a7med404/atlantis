@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use App\Helper\UploadFile;
+use \Session;
 
 class PostController extends Controller
 {
@@ -14,7 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::orderBy('id', 'desc')->get();
+        return view('posts.index', ['posts' => $posts]);
     }
 
     /**
@@ -24,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -35,7 +38,21 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());        
+        $newNameForImage = new UploadFile();
+        $newNameForImage = $newNameForImage->uploadOne($request, 'image', 'public/uploads/images/posts');
+
+        $data = [
+            'name'          => $request->name,
+            'title'         => $request->title,
+            'content'       => $request->content,
+            'category_id'   => 1,//$request->category_id,
+            // 'image'         => $newNameForImage,
+            'user_id'       => 1,
+        ];
+        Post::create($data);
+        Session::flash('flash_massage_type', 1);
+        return redirect('admin/posts')->withFlashMassage('post Added Susscefully');
     }
 
     /**
@@ -44,9 +61,10 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
-    {
-        //
+    public function show(Post $post, $title, $id)
+    { 
+        $post = Post::where('id', $id)->first();
+        return view('site.post', ['post' => $post]);
     }
 
     /**
@@ -55,9 +73,10 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        //
+        $post = Post::where('id', $id)->first();
+        return view('posts.edit', ['post' => $post]);
     }
 
     /**
@@ -69,7 +88,8 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post = Post::where('id', $id)->first();
+        return view('posts.edit', ['post' => $post]);
     }
 
     /**

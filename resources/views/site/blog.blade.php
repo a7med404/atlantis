@@ -6,23 +6,22 @@
   
 @endsection
 @section('content')
-
+  
     <!-- Page Header
     ================================================== -->
     <div id="tf-header">
         <div class="container"> <!-- container -->
-            <h1>Blog Post</h1>
+            <h1>Blog</h1>
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="active">Blog Post</a></li>
+                <li><a class="active">Blog</a></li>
             </ol>
         </div><!-- end container -->
     </div>
 
     <!--  Blog Section
     ================================================== -->
-    <div id="tf-blog" class="blog-post">
+    <div id="tf-blog" class="blog">
         <div class="container"> <!-- container -->
             <div class="section-header">
                 <h2>Latest from the <span class="highlight"><strong>Blog</strong></span></h2>
@@ -36,114 +35,201 @@
 
                 <div class="row"> <!-- row -->
                     <div class="col-md-6 col-md-offset-1"> <!-- Left Blogrol col 8 -->
-
+                      @foreach ($posts as $post)
                         <div class="post-wrap"> <!-- Post Wrapper -->
-                            <p class="small">{{ $post->created_at->diffForHumans() }}</p>
-                            <a href="#">
-                                <h5 class="media-heading"><strong>{{ $post->title }}</strong></h5>
-                            </a>
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="small">{{ $post->created_at->diffForHumans() }}</p>
+                                    <a href="#">
+                                        <h5 class="media-heading"><strong>{{ $post->title }}</strong></h5>
+                                    </a>
+                                    <p>{{ substr($post->content, 0, $length = 180).'...' }} </p>
+                                </div>
+                            </div><!-- end post wrap -->
 
-                            <ul class="list-inline metas pull-left"> <!-- post metas -->
-                                <li><a href="#">by {{ $post->user->display_name }}</a></li> <!-- meta author -->
-                                <li><a href="#comments" class="scroll">{{ $post->comments->count() }} Comments</a></li> <!-- meta comments -->
-                            </ul>
-
-                            <img src="http://placehold.it/800px500" class="img-responsive" alt="...">
-
-                            <p>{{ $post->content }}</p>
-
-                            <br>
-                            <br>
-                            <p><strong>Tags:</strong></p>
-                            <ul class="list-inline meta-tags">
-                                <li><a href="#">web design</a></li>
-                                <li><a href="#">business</a></li>
-                                <li><a href="#">psd design</a></li>
-                                <li><a href="#">themeforest</a></li>
-                                <li><a href="#">wordpress</a></li>
-                                <li><a href="#">responsive</a></li>
-                                <li><a href="#">bootstrap</a></li>
-                            </ul>
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by {{ $post->user->display_name }}</a></li> <!-- meta author -->
+                                    <li><a href="#">{{ $post->comments->count() }} Comments</a></li> <!-- meta comments -->
+                                    <li><a href="{{ route('post', ['title' =>  Str::slug($post->title, '-'), 'id' => $post->id]) }}">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
+                        </div><!-- end Post Wrapper -->
+                      @endforeach
+                        <div class="post-wrap"> <!-- Post Wrapper -->
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <p class="small">January 14, 2015</p>
+                                    <a href="#">
+                                        <h5 class="media-heading"><strong>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec</strong></h5>
+                                    </a>
+                                    <p>Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus </p>
+                                </div>
+                            </div><!-- end post wrap -->
+                            
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by Rudhi Design</a></li> <!-- meta author -->
+                                    <li><a href="#">20 Comments</a></li> <!-- meta comments -->
+                                    <li><a href="#">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
                         </div><!-- end Post Wrapper -->
 
-                        <div class="media post-author"> <!-- Author Box -->
-                            <div class="media-left media-middle">
-                                <a href="#">
-                                  <img class="media-object" src="http://placehold.it/90x90" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5>
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                            </div>
-                        </div>
-
-                        <div id="comments" class="comment">
-                            <h4 class="text-uppercase">Comment <span class="comments">(3)</span></h4>
-                            <div class="media comment-block"> <!-- Comment Block #1 -->
-                                <div class="media-left media-top">
-                                    <a href="#">
-                                      <img class="media-object" src="http://placehold.it/90x90" alt="...">
+                        <div class="post-wrap"> <!-- Post Wrapper -->
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
                                     </a>
                                 </div>
                                 <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
-                                    <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
-                                    <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="pull-right text-uppercase">Reply</a>
-                                </div>
-                            </div>
-
-                            <div class="media comment-block"> <!-- Comment Block #2 -->
-                                <div class="media-left media-top">
+                                    <p class="small">January 14, 2015</p>
                                     <a href="#">
-                                      <img class="media-object" src="http://placehold.it/90x90" alt="...">
+                                        <h5 class="media-heading"><strong>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec</strong></h5>
+                                    </a>
+                                    <p>Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus </p>
+                                </div>
+                            </div><!-- end post wrap -->
+                            
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by Rudhi Design</a></li> <!-- meta author -->
+                                    <li><a href="#">20 Comments</a></li> <!-- meta comments -->
+                                    <li><a href="#">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
+                        </div><!-- end Post Wrapper -->
+
+                        <div class="post-wrap"> <!-- Post Wrapper -->
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
                                     </a>
                                 </div>
                                 <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
-                                    <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
-                                    <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="pull-right text-uppercase">Reply</a>
-                                </div>
-                            </div>
-
-                            <div class="media comment-block"> <!-- Comment Block #3 -->
-                                <div class="media-left media-top">
+                                    <p class="small">January 14, 2015</p>
                                     <a href="#">
-                                      <img class="media-object" src="http://placehold.it/90x90" alt="...">
+                                        <h5 class="media-heading"><strong>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec</strong></h5>
+                                    </a>
+                                    <p>Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus </p>
+                                </div>
+                            </div><!-- end post wrap -->
+                            
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by Rudhi Design</a></li> <!-- meta author -->
+                                    <li><a href="#">20 Comments</a></li> <!-- meta comments -->
+                                    <li><a href="#">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
+                        </div><!-- end Post Wrapper -->
+
+                        <div class="post-wrap"> <!-- Post Wrapper -->
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
                                     </a>
                                 </div>
                                 <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
-                                    <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
-                                    <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="pull-right text-uppercase">Reply</a>
+                                    <p class="small">January 14, 2015</p>
+                                    <a href="#">
+                                        <h5 class="media-heading"><strong>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec</strong></h5>
+                                    </a>
+                                    <p>Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus </p>
                                 </div>
-                            </div>
-                        </div>
+                            </div><!-- end post wrap -->
+                            
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by Rudhi Design</a></li> <!-- meta author -->
+                                    <li><a href="#">20 Comments</a></li> <!-- meta comments -->
+                                    <li><a href="#">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
+                        </div><!-- end Post Wrapper -->
 
-                        <div class="comment">
-                            <h4 class="text-uppercase">Leave a Comment</h4>
-                            <form id="contact-form" class="form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text"  class="form-control" placeholder="Your Name">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Email">
-                                    </div>
+                        <div class="post-wrap"> <!-- Post Wrapper -->
+                            <div class="media post"> <!-- post wrap -->
+                                <div class="media-left"> 
+                                    <a href="#"> <!-- link to your post single page -->
+                                      <img class="media-object" src="http://placehold.it/120x150" alt="..."> <!-- Your Post Image -->
+                                    </a>
                                 </div>
-                                <textarea class="form-control" rows="6" placeholder="Your Comment..."></textarea>
-                                <button type="submit" class="btn btn-default en-btn">Submit Comment</button>
-                            </form>
-                        </div>
+                                <div class="media-body">
+                                    <p class="small">January 14, 2015</p>
+                                    <a href="#">
+                                        <h5 class="media-heading"><strong>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec</strong></h5>
+                                    </a>
+                                    <p>Tempor vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio. Diam nibh diam, quam elit, libero nostra ut. Pellentesque vehicula. Eget sed, dapibus </p>
+                                </div>
+                            </div><!-- end post wrap -->
+                            
+                            <div class="post-meta"> <!-- Meta details -->
+                                <ul class="list-inline metas pull-left"> <!-- post metas -->
+                                    <li><a href="#">by Rudhi Design</a></li> <!-- meta author -->
+                                    <li><a href="#">20 Comments</a></li> <!-- meta comments -->
+                                    <li><a href="#">Read More</a></li> <!-- read more link -->
+                                </ul>
+                                <ul class="list-inline meta-detail pull-right"> <!-- user meta interaction -->
+                                    <li><a href="#"><i class="fa fa-heart"></i></a> 50</li> <!-- like button -->
+                                    <li><i class="fa fa-eye"></i> 110</li> <!-- no. of views -->
+                                </ul>
+                            </div><!-- end Meta details --> 
+                        </div><!-- end Post Wrapper -->
+
+                        <div class="text-left"> <!-- Blogrol Pagination -->
+                            <nav>
+                                <ul class="pagination">
+                                    <li>
+                                      <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">Prev</span>
+                                      </a>
+                                    </li>
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li>
+                                      <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">Next</span>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>         
 
                     </div> <!-- end Left content col 8 -->
 
@@ -291,8 +377,8 @@
                         </div>
                     </div><!-- end right content col 4 -->
 
-                </div><!-- end row -->
-                      
+                </div>
+                       
             </div><!-- end container -->
         </div> <!-- end fullwidth gray background -->
     </div>
