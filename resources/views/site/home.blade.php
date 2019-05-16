@@ -261,14 +261,14 @@
 
                       <div class="counter"> 
 
-                        <div class="col-xs-6 col-sm-4 col-md-2 facts"><!-- counter #2 -->
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-md-offset-1 facts"><!-- counter #2 -->
                             <div class="count-box">
                                 <i class="fa fa-user"></i>
                                 <h4 class="">98%</h4>
                                 <p class="small">Client Statisfaction</p>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 col-md-offset-1 facts"><!-- counter #1 -->
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-md-2 facts"><!-- counter #1 -->
                             <div class="count-box">
                                 <i class="fa fa-desktop"></i>
                                 <h4 class="count">1253</h4>
@@ -848,7 +848,7 @@
                       <div class="col-md-4">
                           <div class="contact-detail">
                               <i class="fa fa-envelope-o"></i>
-                              <h4>rudhisasmito@gmail.com</h4><!-- email add -->
+                              <h4>shahab_08@yahoo.com</h4><!-- email add -->
                           </div>
                       </div>
 

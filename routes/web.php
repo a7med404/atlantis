@@ -1,4 +1,5 @@
 <?php
+use GuzzleHttp\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,28 +12,37 @@
 |
 */
 
-Route::get('/admin', function () {
-    return view('app');
-});
+
 
 
 Route::get('/blog', function () {
     return view('site/post');
 });
 
-// Route::get('/', function () {
-//     return view('site/home');
-// });
+Route::get('/', function () {
+    return view('site/home');
+});
 
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/blogs', 'BlogController');
     Route::resource('/posts', 'PostController');
     Route::resource('/users', 'BlogController');
+    Route::get('/home', function () {
+        return view('app');
+    });
+
+    Route::get('/logout', function(){
+        auth()->logout();
+        session()->forget('*');
+        Session::flash('flash_massage_type');
+        return redirect()->route('login')->withFlashMassage('Logout Susscefully');
+    })->name('logout');
+    
 });
 
-Route::get('/blog', 'BlogController@index')->name('blog');
 
+Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/post/{title}/{id}', 'PostController@show')->name('post');

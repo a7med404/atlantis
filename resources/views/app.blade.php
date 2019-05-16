@@ -7,7 +7,7 @@
 @endsection
 @section('content')
 
-    <!-- Content Header (Page header) -->
+    {{-- <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
         Blank page
@@ -48,7 +48,7 @@
         <!-- /.box -->
 
     </section>
-    <!-- /.content -->
+    <!-- /.content --> --}}
 @endsection
   
 @section('footer')

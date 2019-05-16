@@ -37,8 +37,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        // dd($request->all());        
+    {    
         $newNameForImage = new UploadFile();
         $newNameForImage = $newNameForImage->uploadOne($request, 'image', 'public/uploads/images/posts');
 
@@ -46,8 +45,8 @@ class PostController extends Controller
             'name'          => $request->name,
             'title'         => $request->title,
             'content'       => $request->content,
-            'category_id'   => 1,//$request->category_id,
-            // 'image'         => $newNameForImage,
+            'category_id'   => $request->category_id,
+            'image'         => $newNameForImage,
             'user_id'       => 1,
         ];
         Post::create($data);

@@ -18,6 +18,16 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="form-group">
+                        {!! Form::label('category', 'Category') !!}
+                        {!! Form::select('category_id', getSelect('category'), null, ['id' => 'category', 'placeholder' => 'Select The category', 'class' => "form-control {{ $errors->has('category') ? ' is-invalid' : '' }}", 'value' => "{{ old('category_id') }}", 'required']) !!}
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col col-lg-8 col-md-8 col-sm-12 col-12">
                     <div class="form-group">

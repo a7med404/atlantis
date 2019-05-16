@@ -9,7 +9,7 @@
                 <img src="modules/master/images/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>{{ auth()->user()->display_name }}</p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </li>
                 <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
                 <li class="header">LABELS</li>
-                <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+                <li><a href="{{ route('register') }}"><i class="fa fa-circle-o text-red"></i> <span>Create User</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
             </ul>

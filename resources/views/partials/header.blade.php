@@ -26,7 +26,7 @@
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <img src="modules/master/images/user2-160x160.jpg" class="user-image" alt="User Image">
-                    <span class="hidden-xs">Alexander Pierce</span>
+                    <span class="hidden-xs">{{ auth()->user()->display_name }}</span>
                     </a>
                     <ul class="dropdown-menu">
                     <!-- User image -->
@@ -34,8 +34,8 @@
                         <img src="modules/master/images/user2-160x160.jpg" class="img-circle" alt="User Image">
         
                         <p>
-                        Alexander Pierce - Web Developer
-                        <small>Member since Nov. 2012</small>
+                        {{ auth()->user()->display_name }} - CTO
+                        <small>Member since Nov. 2019</small>
                         </p>
                     </li>
                     <!-- Menu Body -->
@@ -59,7 +59,7 @@
                         <a href="#" class="btn btn-default btn-flat">Profile</a>
                         </div>
                         <div class="pull-right">
-                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                        <a href="{{ route('logout') }}" class="btn btn-default btn-flat">Sign out</a>
                         </div>
                     </li>
                     </ul>
