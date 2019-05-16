@@ -30,10 +30,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('/blogs', 'BlogController');
     Route::resource('/posts', 'PostController');
     Route::resource('/users', 'BlogController');
-    Route::get('/home', function () {
-        return view('app');
-    });
-
+   
     Route::get('/logout', function(){
         auth()->logout();
         session()->forget('*');
@@ -42,6 +39,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     })->name('logout');
     
 });
+Route::get('/admin', function () {
+    return view('app');
+})->middleware('auth');
 
 
 Route::get('/blog', 'BlogController@index')->name('blog');

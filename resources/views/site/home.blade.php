@@ -86,83 +86,10 @@
       </div><!-- end container -->
   </div>
 
+</div>  <!-- end fullwidth gray background -->
   <!-- Service Section
   ================================================== -->
-  <div id="tf-services">
-      <div class="container"> <!-- container -->
-          <div class="section-header">
-              <h2>TRANSFORMING TECHNOLOGY TO <span class="highlight"><strong>SOLUTIONS</strong></span></h2>
-              <h5><em>Imparting excellence in every project we do & every task we undertake With Exceptional Expertise & Years Of Experience, We Dig Deep To Develop Robust Solutions</em></h5>
-              <div class="fancy"><span><img src="modules/site/img/favicon.ico" alt="..."></span></div>
-          </div>
-          <div class="row"> <!-- row -->
-              <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
-                  <div class="media service"> <!-- Service #1 -->
-                      <div class="media-body">
-                          <h4 class="media-heading">Web Designing</h4>
-                          <p>we develop designs which stay in the mind of your customers Html5 Css3 Jquery,Javascript Responsive Web Designing.</p>
-                      </div>
-                      <div class="media-right media-middle">
-                          <i class="fa fa-globe"></i>
-                      </div>
-                  </div><!-- End Service #1 -->
-                  <div class="media service"> <!-- Service #2 -->
-                      <div class="media-body">
-                          <h4 class="media-heading">Web Development</h4>
-                          <p>Kick Start Your Business With Highly Interactive Web Applications PHP Web Applications B2B & B2C Portal Developments.</p>
-                      </div>
-                      <div class="media-right media-middle">
-                          <i class="fa fa-magic"></i>
-                      </div>
-                  </div><!-- End Service #2 -->
 
-                  {{-- <div class="media service"> <!-- Service #3 -->
-                      <div class="media-body">
-                            <h4 class="media-heading">SEO/Online Marketing</h4>
-                            <p> parturient montes, nascetur ridiculus mus.</p>
-                      </div>
-                      <div class="media-right media-middle">
-                          <i class="fa fa-camera-retro"></i>
-                      </div>
-                  </div> <!-- End Service #3 --> --}}
-              </div> <!-- End Left Content Col 6 -->
-
-              <div class="col-md-6"> <!-- Right Content Col 6 -->
-                  {{-- <div class="media service"> <!-- Service #4 -->
-                      <div class="media-left media-middle">
-                          <i class="fa fa-bicycle"></i>
-                      </div>
-                      <div class="media-body">
-                          <h4 class="media-heading">UI/UX Design</h4>
-                          <p> parturient montes, nascetur ridiculus mus.</p>
-                      </div>
-                  </div><!-- end Service #4 --> --}}
-
-                  <div class="media service"> <!-- Service #5 -->
-                      <div class="media-left media-middle">
-                          <i class="fa fa-android"></i>
-                      </div>
-                      <div class="media-body">
-                            <h4 class="media-heading">Mobile App Development</h4>
-                            <p>Turn your app idea into business and generate revenue iOS Apps Android Apps Windows Apps BlackBerry Apps.</p>
-                      </div>
-                  </div> <!-- end Service #5 -->
-
-                  <div class="media service"> <!-- Service #6 -->
-                      <div class="media-left media-middle">
-                          <i class="fa fa-line-chart"></i>
-                      </div>
-                      <div class="media-body">
-                            <h4 class="media-heading">Digital Marketing (SEO)</h4>
-                            <p>Take the lead of online space with SEO services, Social media marketing Search engine marketing Social engine optimization.</p>
-                      </div>
-                  </div> <!-- end Service #6 -->
-              </div><!-- end Right Content Col 6 -->
-              
-          </div><!-- end row -->
-
-      </div><!-- end container -->
-  </div>
 
   <!-- About Us Section
   ================================================== -->
@@ -177,7 +104,7 @@
 
       <div class="gray-bg"> <!-- fullwidth gray background -->
 
-          <div class="container"><!-- container -->
+          {{-- <div class="container"><!-- container -->
               <div class="row"> <!-- row -->
 
                   <div class="col-md-6"> <!-- left content col 6 -->
@@ -253,7 +180,7 @@
                   </div><!-- end right content col 6 -->
 
               </div> <!-- end row -->
-          </div><!-- end container -->
+          </div><!-- end container --> --}}
 
           <div id="tf-counter" class="text-center">
               <div class="container">
@@ -309,15 +236,15 @@
       </div> <!-- end fullwidth gray background -->
   </div>
 
-  <!-- Why Us/Features Section
+  <!-- Why Us/services Section
   ================================================== -->
-  <div id="tf-features">
+  <div id="tf-services">
 
       <div class="container">
           <div class="section-header">
-              <h2>Great Products and <span class="highlight"><strong>Features</strong></span></h2>
-              <h5><em>We design and build functional and beautiful websites</em></h5>
-              <div class="fancy"><span><img src="modules/site/img/favicon.ico" alt="..."></span></div>
+            <h2>TRANSFORMING TECHNOLOGY TO <span class="highlight"><strong>SOLUTIONS</strong></span></h2>
+            <h5><em>Imparting excellence in every project we do & every task we undertake With Exceptional Expertise & Years Of Experience, We Dig Deep To Develop Robust Solutions</em></h5>
+            <div class="fancy"><span><img src="modules/site/img/favicon.ico" alt="..."></span></div>
           </div>
       </div>
 
@@ -330,31 +257,31 @@
                           <li role="presentation" class="active">  <!-- feature tab menu #1 -->
                               <a href="#f1" aria-controls="f1" role="tab" data-toggle="tab">
                                   <span class="fa fa-desktop"></span>
-                                  Internet Communication<br><small>sub title here</small>
+                                  Web Development<br><small>sub title here</small>
                               </a>
                           </li>
                           <li role="presentation"> <!-- feature tab menu #2 -->
                               <a href="#f2" aria-controls="f2" role="tab" data-toggle="tab">
                                   <span class="fa fa-pencil"></span>
-                                  Branding and Development<br><small>sub title here</small>
+                                  Web Designing<br><small>sub title here</small>
                               </a>
                           </li>
                           <li role="presentation"> <!-- feature tab menu #3 -->
                               <a href="#f3" aria-controls="f3" role="tab" data-toggle="tab">
-                                  <span class="fa fa-space-shuttle"></span>
-                                  Motion Graphics<br><small>sub title here</small>
+                                  <span class="fa fa-automobile"></span>
+                                  Mobile App Development<br><small>sub title here</small>
                               </a>
                           </li>
                           <li role="presentation"> <!-- feature tab menu #4 -->
                               <a href="#f4" aria-controls="f4" role="tab" data-toggle="tab">
-                                  <span class="fa fa-automobile"></span>
-                                  Mobile Application<br><small>sub title here</small>
+                                  <span class="fa fa-space-shuttle"></span>
+                                  Digital Marketing (SEO)<br><small>sub title here</small>
                               </a>
                           </li>
                           <li role="presentation"> <!-- feature tab menu #5 -->
                               <a href="#f5" aria-controls="f5" role="tab" data-toggle="tab">
                                   <span class="fa fa-institution"></span>
-                                  Relaible Company Analysis<br><small>sub title here</small>
+                                  UI/UX Design<br><small>sub title here</small>
                               </a>
                           </li>
                       </ul>
@@ -365,27 +292,28 @@
                       <!-- Tab panes -->
                       <div class="tab-content features-content"> <!-- tab content wrapper -->
                           <div role="tabpanel" class="tab-pane fade in active" id="f1"> <!-- feature #1 content open -->
-                              <h4>Internet Communication</h4>
-                              <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
+                              <h4>Web Development</h4>
+                              <p>Kick Start Your Business With Highly Interactive Web Applications PHP Web Applications B2B & B2C Portal Developments.</p>
                               <img src="modules/site/img/tab01.png" class="img-responsive" alt="...">
                           </div>
                           <div role="tabpanel" class="tab-pane fade" id="f2"> <!-- feature #2 content -->
-                              <h4>Branding and Development</h4>
-                              <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
+                              <h4>Web Designing</h4>
+                              <p>we develop designs which stay in the mind of your customers Html5 Css3 Jquery,Javascript Responsive Web Designing.
+                            </p>
                               <img src="modules/site/img/tab02.png" class="img-responsive" alt="...">
                           </div>
                           <div role="tabpanel" class="tab-pane fade" id="f3"> <!-- feature #3 content -->
-                              <h4>Motion Graphics</h4>
+                              <h4>Mobile App Development</h4>
                               <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
                               <img src="modules/site/img/tab03.png" class="img-responsive" alt="...">
                           </div>
                           <div role="tabpanel" class="tab-pane fade" id="f4"> <!-- feature #4 content -->
-                              <h4>Mobile Application</h4>
-                              <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
+                              <h4>Digital Marketing (SEO)</h4>
+                              <p>Take the lead of online space with SEO services, Social media marketing Search engine marketing Social engine optimization.</p>
                               <img src="modules/site/img/tab04.png" class="img-responsive" alt="...">
                           </div>
                           <div role="tabpanel" class="tab-pane fade" id="f5"> <!-- feature #5 content -->
-                              <h4>Relaible Company Analysis</h4>
+                              <h4>UI/UX Design</h4>
                               <p>Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
                               <img src="modules/site/img/tab05.png" class="img-responsive" alt="...">
                           </div>
@@ -411,8 +339,8 @@
               <ul class="list-inline cat"> <!-- Portfolio Filter Categories -->
                   <li><a href="#" data-filter="*" class="active">All</a></li>
                   <li><a href="#" data-filter=".web">Web</a></li>
-                  <li><a href="#" data-filter=".brand">Branding</a></li>
-                  <li><a href="#" data-filter=".app">Apps</a></li>
+                  <li><a href="#" data-filter=".ios">IOS</a></li>
+                  <li><a href="#" data-filter=".android">Android</a></li>
                   <li><a href="#" data-filter=".others">Others</a></li>
               </ul><!-- End Portfolio Filter Categories -->
           </div>
@@ -422,7 +350,7 @@
       <div class="container-fluid"> <!-- fluid container -->
            <div id="itemsWork" class="row text-center"> <!-- Portfolio Wrapper Row -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding brand others"> <!-- Works #1 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding ios others"> <!-- Works #1 col 3 -->
                   <div class="box"> 
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -436,21 +364,21 @@
                   </div>
               </div><!-- end Works #1 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps"> <!-- Works #2 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding android "> <!-- Works #2 col 3 -->
                   <div class="box">
                       <div class="hover-bg">
                           <div class="hover-text off">
-                              <a title="Mobile Application" href="modules/site/img/portfolio/02@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="modules/site/img/portfolio/02@2x.jpg">
+                              <a title="Mobile Application" href="modules/site/img/portfolio/124.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="modules/site/img/portfolio/124.jpg">
                                   <i class="fa fa-expand"></i>
                               </a>
                               <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
                           </div>
-                          <img src="modules/site/img/portfolio/02.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                          <img src="modules/site/img/portfolio/124.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                       </div>
                   </div>
               </div><!-- end Works #2 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others brand"><!-- Works #3 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others ios"><!-- Works #3 col 3 -->
                   <div class="box">
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -464,7 +392,7 @@
                   </div>
               </div><!-- end Works #3 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web"> <!-- Works #4 col 3 -->
+              {{-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web"> <!-- Works #4 col 3 -->
                   <div class="box">
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -476,9 +404,9 @@
                           <img src="modules/site/img/portfolio/04.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
                       </div>
                   </div>
-              </div> <!-- end Works #4 col 3 -->
+              </div> <!-- end Works #4 col 3 --> --}}
 
-              <div class="col-xs-12 col-sm-6 col-md-3 nopadding web others"> <!-- Works #5 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 nopadding android others"> <!-- Works #5 col 3 -->
                   <div class="box">
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -492,7 +420,7 @@
                   </div>
               </div> <!-- end Works #5 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 nopadding app">  <!-- Works #6 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 nopadding android">  <!-- Works #6 col 3 -->
                   <div class="box">
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -506,21 +434,35 @@
                   </div>
               </div><!-- end Works #6 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 nopadding web brand"><!-- Works #7 col 3 -->
-                  <div class="box">
-                      <div class="hover-bg">
-                          <div class="hover-text off">
-                              <a title="Freedom Project #1" href="modules/site/img/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="modules/site/img/portfolio/07@2x.jpg">
-                                  <i class="fa fa-expand"></i>
-                              </a>
-                              <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
-                          </div>
-                          <img src="modules/site/img/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                      </div>
-                  </div>
-              </div><!-- end Works #7 col 3 -->
+              <div class="col-xs-12 col-sm-6 col-md-3 nopadding ios"><!-- Works #7 col 3 -->
+                <div class="box">
+                    <div class="hover-bg">
+                        <div class="hover-text off">
+                            <a title="Freedom Project #1" href="modules/site/img/portfolio/07@2x.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="modules/site/img/portfolio/07@2x.jpg">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                        </div>
+                        <img src="modules/site/img/portfolio/07.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                    </div>
+                </div>
+            </div><!-- end Works #7 col 3 -->
 
-              <div class="col-xs-12 col-sm-6 col-md-3 nopadding app"> <!-- Works #8 col 3 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 nopadding ios"><!-- Works #7 col 3 -->
+                <div class="box">
+                    <div class="hover-bg">
+                        <div class="hover-text off">
+                            <a title="Freedom Project #1" href="modules/site/img/portfolio/112.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="modules/site/img/portfolio/07@2x.jpg">
+                                <i class="fa fa-expand"></i>
+                            </a>
+                            <a href="#"><i class="fa fa-chain"></i></a><!-- change # with your url to link it to another page -->
+                        </div>
+                        <img src="modules/site/img/portfolio/112.jpg" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
+                    </div>
+                </div>
+            </div><!-- end Works #7 col 3 -->
+
+              <div class="col-xs-12 col-sm-6 col-md-3 nopadding android"> <!-- Works #8 col 3 -->
                   <div class="box"> 
                       <div class="hover-bg">
                           <div class="hover-text off">
@@ -539,80 +481,6 @@
       </div> <!-- End Container-Fluid -->
   </div>
 
-  <!-- Process Section
-  ================================================== -->
-  <div id="tf-process">
-      <div class="container"> <!-- container -->
-          <div class="section-header">
-              <h2>Our Best <span class="highlight"><strong>WorkFlow</strong></span></h2>
-              <h5><em>atlantis Technologies encourages innovation, out-of-the-box thinking & continual learning. We follow a systematic and standard process to ensure flaw-less project completion.</em></h5>
-              <div class="fancy"><span><img src="modules/site/img/favicon.ico" alt="..."></span></div>
-          </div>
-      </div><!-- end container -->
-
-      <div class="gray-bg"> <!-- fullwidth gray background -->
-          <div class="container"><!-- container -->
-              <div class="vline"></div> <!--  Vertical Line -->
-              <div id="process" class="row"> <!-- row -->
-
-                  <div class="col-md-10 col-md-offset-1">
-
-                      <div class="media process"> <!-- Process #1 -->
-                          <div class="media-right media-middle">
-                              <i class="fa fa-search-plus"></i>
-                          </div>
-                          <div class="media-body">
-                              <h4 class="media-heading">Strategy / Research</h4>
-                              <p>atlantis Technologies encourages innovation, out-of-the-box thinking & continual learning. We follow a systematic and standard process to ensure flaw-less project completion.</p>
-                          </div>
-                      </div><!-- Process #1 -->
-
-                      <div class="media process"> <!-- Process #2 -->
-                          <div class="media-right media-middle">
-                              <i class="fa fa-wrench"></i>
-                          </div>
-                          <div class="media-body">
-                              <h4 class="media-heading">Design</h4>
-                              <p>After finalizing the strategy, our veteran designers creates a prototype of your project as per specificationss.</p>
-                          </div>
-                      </div><!-- Process #2 -->
-
-                      <div class="media process"> <!-- Process #3 -->
-                        <div class="media-right media-middle">
-                            <i class="fa fa-flask"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Develop</h4>
-                            <p>Once designs are finalized & approved, we move forward with development to ensure excellence.</p>
-                        </div>
-                    </div><!-- Process #3 -->
-
-                    <div class="media process"> <!-- Process #3 -->
-                        <div class="media-right media-middle">
-                            <i class="fa fa-flask"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Testing and Refine</h4>
-                            <p>Before rolling out the project, we ensure quality of your web or mobile apps project with Q&A testing.</p>
-                        </div>
-                    </div><!-- Process #3 -->
-
-                      <div class="media process"> <!-- Process #4 -->
-                          <div class="media-right media-middle">
-                              <i class="fa fa-truck"></i>
-                          </div>
-                          <div class="media-body">
-                              <h4 class="media-heading">Deliver</h4>
-                              <p>Our design & development teams offer you very high quality projects to make your business develop.</p>
-                          </div>
-                      </div><!-- Process #4 -->
-                      
-                  </div>
-
-              </div> <!-- end row -->
-          </div><!-- end container -->
-      </div>  <!-- end fullwidth gray background -->
-  </div>
 
   {{-- <!--  Blog Section
   ================================================== -->
@@ -819,6 +687,85 @@
       </div> <!-- end fullwidth gray background -->
   </div> --}}
 
+
+  <!-- Process Section
+  ================================================== -->
+</div>
+<div id="tf-process">
+    <div class="container"> <!-- container -->
+        <div class="section-header">
+            <h2>Our Best <span class="highlight"><strong>WorkFlow</strong></span></h2>
+            <h5><em>atlantis Technologies encourages innovation, out-of-the-box thinking & continual learning. We follow a systematic and standard process to ensure flaw-less project completion.</em></h5>
+            <div class="fancy"><span><img src="modules/site/img/favicon.ico" alt="..."></span></div>
+        </div>
+        <div class="row"> <!-- row -->
+            <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
+                <div class="media service"> <!-- Service #1 -->
+                    <div class="media-body">
+                        <h4 class="media-heading">Strategy / Research</h4>
+                        <p>we develop designs which stay in the mind of your customers Html5 Css3 Jquery,Javascript Responsive Web Designing.</p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                </div><!-- End Service #1 -->
+                <div class="media service"> <!-- Service #2 -->
+                    <div class="media-body">
+                        <h4 class="media-heading">Design</h4>
+                        <p>After finalizing the strategy, our veteran designers creates a prototype of your project as per specificationss.</p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <i class="fa fa-magic"></i>
+                    </div>
+                </div><!-- End Service #2 -->
+
+                <div class="media service"> <!-- Service #3 -->
+                    <div class="media-body">
+                          <h4 class="media-heading">Develop</h4>
+                          <p>Once designs are finalized & approved, we move forward with development to ensure excellence.</p>
+                    </div>
+                    <div class="media-right media-middle">
+                        <i class="fa fa-camera-retro"></i>
+                    </div>
+                </div> <!-- End Service #3 -->
+            </div> <!-- End Left Content Col 6 -->
+
+            <div class="col-md-6"> <!-- Right Content Col 6 -->
+                <div class="media service"> <!-- Service #4 -->
+                    <div class="media-left media-middle">
+                        <i class="fa fa-bicycle"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Testing and Refine</h4>
+                        <p>Before rolling out the project, we ensure quality of your web or mobile apps project with Q&A testing.</p>
+                    </div>
+                </div><!-- end Service #4 -->
+
+                <div class="media service"> <!-- Service #5 -->
+                    <div class="media-left media-middle">
+                        <i class="fa fa-android"></i>
+                    </div>
+                    <div class="media-body">
+                          <h4 class="media-heading">Deliver</h4>
+                          <p>Our design & development teams offer you very high quality projects to make your business develop.</p>
+                    </div>
+                </div> <!-- end Service #5 -->
+
+                <div class="media service"> <!-- Service #6 -->
+                    <div class="media-left media-middle">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+                    <div class="media-body">
+                          <h4 class="media-heading">Digital Marketing (SEO)</h4>
+                          <p>Take the lead of online space with SEO services, Social media marketing Search engine marketing Social engine optimization.</p>
+                    </div>
+                </div> <!-- end Service #6 -->
+            </div><!-- end Right Content Col 6 -->
+            
+        </div><!-- end row -->
+
+    </div><!-- end container -->
+</div>
   <!-- Contact Section
   ================================================== -->
   <div id="tf-contact">

@@ -13,7 +13,7 @@
         <div class="container"> <!-- container -->
             <h1>Blog Post</h1>
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a class="active">Blog Post</a></li>
             </ol>
@@ -48,7 +48,7 @@
                                 <li><a href="#comments" class="scroll">{{ $post->comments->count() }} Comments</a></li> <!-- meta comments -->
                             </ul>
 
-                            <img src="http://placehold.it/800px500" class="img-responsive" alt="...">
+                            <img src="{{ getPostImage($post->image) }}" class="post-img img-responsive" alt="...">
 
                             <p>{{ $post->content }}</p>
 
@@ -66,7 +66,7 @@
                             </ul>
                         </div><!-- end Post Wrapper -->
 
-                        <div class="media post-author"> <!-- Author Box -->
+                        {{-- <div class="media post-author"> <!-- Author Box -->
                             <div class="media-left media-middle">
                                 <a href="#">
                                   <img class="media-object" src="http://placehold.it/90x90" alt="...">
@@ -76,10 +76,11 @@
                                 <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5>
                                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
                             </div>
-                        </div>
+                        </div> --}}
 
+                        @foreach ($post->comments as $comment)
                         <div id="comments" class="comment">
-                            <h4 class="text-uppercase">Comment <span class="comments">(3)</span></h4>
+                            <h4 class="text-uppercase">Comment <span class="comments">({{ $comment->count() }})</span></h4>
                             <div class="media comment-block"> <!-- Comment Block #1 -->
                                 <div class="media-left media-top">
                                     <a href="#">
@@ -87,47 +88,16 @@
                                     </a>
                                 </div>
                                 <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
+                                    <small class="pull-right">{{ $comment->created_at->diffForHumans() }}</small>
                                     <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
                                     <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="pull-right text-uppercase">Reply</a>
-                                </div>
-                            </div>
-
-                            <div class="media comment-block"> <!-- Comment Block #2 -->
-                                <div class="media-left media-top">
-                                    <a href="#">
-                                      <img class="media-object" src="http://placehold.it/90x90" alt="...">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
-                                    <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
-                                    <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="pull-right text-uppercase">Reply</a>
-                                </div>
-                            </div>
-
-                            <div class="media comment-block"> <!-- Comment Block #3 -->
-                                <div class="media-left media-top">
-                                    <a href="#">
-                                      <img class="media-object" src="http://placehold.it/90x90" alt="...">
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <small class="pull-right">Feb. 15, 2015</small>
-                                    <h5 class="media-heading">Post by <a href="#">Rudhi Design</a></h5> 
-                                    <div class="clearfix"></div>
-                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                    {{ $comment->content }}
                                     <div class="clearfix"></div>
                                     <a href="#" class="pull-right text-uppercase">Reply</a>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
 
                         <div class="comment">
                             <h4 class="text-uppercase">Leave a Comment</h4>
@@ -185,7 +155,7 @@
                                 </ul>
                             </div>
 
-                            <div class="widget post-tab"> <!-- Posts Tab Widget -->
+                            {{-- <div class="widget post-tab"> <!-- Posts Tab Widget -->
                                 <div role="tabpanel">
 
                                     <!-- Nav tabs -->
@@ -272,7 +242,7 @@
                                     </div>
 
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="widget tags"> <!-- Tags Widget -->
                                 <h4 class="text-uppercase">Tags</h4>

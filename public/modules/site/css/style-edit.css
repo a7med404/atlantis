@@ -5,3 +5,12 @@
 .carousel-caption .content-heading img {
   max-width: 100%;
 }
+
+.post-wrap .post img{
+  width: 120px;
+  height: 150px;
+}
+.post-img{
+  width: 800px;
+  height: 300px;
+}

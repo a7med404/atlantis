@@ -47,7 +47,7 @@ class PostController extends Controller
             'content'       => $request->content,
             'category_id'   => $request->category_id,
             'image'         => $newNameForImage,
-            'user_id'       => 1,
+            'user_id'       => auth()->user()->id,
         ];
         Post::create($data);
         Session::flash('flash_massage_type', 1);
@@ -62,7 +62,7 @@ class PostController extends Controller
      */
     public function show(Post $post, $title, $id)
     { 
-        $post = Post::where('id', $id)->first();
+        $post = Post::where('id', $id)->with('comments')->first();
         return view('site.post', ['post' => $post]);
     }
 
